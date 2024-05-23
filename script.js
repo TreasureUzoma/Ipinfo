@@ -21,3 +21,23 @@ function getIPInfo() {
             document.getElementById("ipInfo").innerHTML = "<p>Error: Invalid IP address</p>";
         });
 }
+document.getElementById("check-my-ip").addEventListener('click', function(){
+    async function getPublicIP() {
+    try {
+      const response = await fetch('https://api.ipify.org?format=json');
+      const data = await response.json();
+
+      return data.ip;
+    } catch (error) {
+      console.error('Error fetching public IP:', error);
+      return null;
+    }
+  }
+    getPublicIP().then(publicIP => {
+    if (publicIP) {
+      document.getElementById("ipInput").value = publicIP
+      console.log('Public IP:', publicIP);
+      getIPInfo();
+    }
+  });
+});
