@@ -1,61 +1,59 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
 nav {
-  position: fixed;
-  background-color: #121212;
-  position: fixed;
-  top:0;
-  left:0;
-  right:0;
-  padding: 9px 10px;
-  z-index: 1000;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #121212;
+    padding: 9px 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 60px;
 }
 #scrollButton {
-  background-color: transparent;
-  border: none;
-  fill: #fff;
-  margin-top: 4px;
-  font-size: 20px;
-  float: right;
+    background-color: transparent;
+    border: none;
+    fill: #fff;
 }
 .nav-top {
-  float: left;
-  font-weight: bold;
-  margin: 10px;
-  color: #fff;
-  font-family: Poppins;
-  text-decoration: none;
+    font-weight: bold;
+    font-family: Poppins;
+    text-decoration: none;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background color */
-    color: #fff; /* Light text color */
+    background-color: #121212;
+    color: #fff;
     padding: 20px;
     font-family: Poppins;
 }
 
 .container {
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 input[type="text"] {
     padding: 10px;
     outline: none;
     margin-right: 0;
-    margin-bottom: 10px;
-    border: 1px solid #555; /* Dark border color */
+    border: 1px solid #555;
     border-radius: 5px;
-    background-color: #222; /* Dark input background color */
-    color: #fff; /* Light text color */
+    background-color: #222;
+    color: #fff;
 }
 
 #ipinfo {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
-    margin-left: 0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -65,25 +63,22 @@ button:hover {
     background-color: #0056b3;
 }
 
-#ipInfo {
-    color: #fff; /* Light text color */
-}
 p {
-  font-size: 14px;
+    font-size: 14px;
 }
 span {
-  float: right;
+    float: right;
 }
 #check-my-ip {
-  background-color: #fff;
-  position: absolute;
-  bottom: 55px;
-  right: 55px;
-  cursor: pointer;
-  padding: 0;
-  border-radius: 20px;
-  outline: none;
-  border: none;
+    background-color: #fff;
+    position: fixed;
+    bottom: 55px;
+    right: 55px;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
 }
 #check-my-ip img {
     width: 30px;
